@@ -1,7 +1,6 @@
 {
-  "name": "dynamic-route",
+  "name": "login-project",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +9,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "cookie-parser": "^1.4.3",
-    "express": "^4.15.3"
-  }
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "mustache-express": "^1.2.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/savvmae/login-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/savvmae/login-project/issues"
+  },
+  "homepage": "https://github.com/savvmae/login-project#readme",
+  "description": ""
 }
