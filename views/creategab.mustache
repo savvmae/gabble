@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+
+    <body>
+        <p>writing gab as: {{name}}</p>
+        {{#errors}}
+        <p>{{msg}}</p>
+        {{/errors}}
+        <form  action="/gabs" method="POST">
+        <input type="text" name="gab" placeholder="Write Gab Here:" autofocus>
+            <button type="submit">Submit Gab</button>
+        </form>
+    </body>
+</html>
