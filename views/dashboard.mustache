@@ -1,19 +1,43 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="/styles.css">
-    </head>
-    <body>
-        <a href="/mygabs">My Gabs </a>
-        <h1>Hello, {{name}}! </h1> {{#gabs}}<p>{{description}} </p> <p> Written by: {{author}}</p><a href="/likes/{{id}}">liked by: {{likes.length}} users</a>
-         <form  action="/like/{{id}}" method="POST">
-            <button type="submit">Like</button>
-        </form>
-        {{/gabs}}
 
-        <a href='/creategab'> Write New Gab </a>
-        <form  action="/logout" method="POST">
-            <button type="submit">Logout</button>
-        </form>
-   
-    </body>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Bahiana|Unica+One|Walter+Turncoat" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="./images/gab.ico" type="image/x-icon">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class='nav-bar'>
+        <div class="nav-bar-item"><a href='/dashboard'><img src='./images/gabble.jpeg'></a>
+            <div class='display-name'>{{name}}</div>
+        </div>
+        <div class="nav-bar-item"><a class='nav-bar-a' href="/mygabs">My Gabs </a></div>
+        <div class="nav-bar-item"> <a class='nav-bar-a' href='/creategab'> Write New Gab </a></div>
+        <div class="nav-bar-item">
+            <form action="/logout" method="POST">
+                <button type="submit">Logout</button>
+            </form>
+        </div>
+    </div>
+    <div class='gab-card-wrapper'>
+        {{#gabs}}
+
+        <div class='gab-card'>
+            <p>{{description}} </p>
+            <div class='likes-section'>
+                <p class="details"> Written by: {{author}}</p>
+                <p class="details"> {{timestamp}}</p>
+            </div>
+            <div class='likes-section'>
+                <a class='likes-link' href="/likes/{{id}}">{{likes.length}} Likes </a>
+                <form action="/like/{{id}}" method="POST">
+                    <button class='like-button'type="submit"></button>
+                </form>
+            </div>
+        </div>
+        {{/gabs}}
+    </div>
+</body>
 </html>

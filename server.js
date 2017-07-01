@@ -4,6 +4,8 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const mustacheExpress = require('mustache-express');
 const expressValidator = require('express-validator');
+var moment = require('moment');
+moment().format();
 const models = require('./models');
 const dashboard = require('./routes/dashboard');
 const index = require('./routes/index');
@@ -20,7 +22,9 @@ application.set('view engine', 'mustache');
 
 application.use(cookieParser());
 application.use(bodyParser.urlencoded());
+
 application.use(expressValidator());
+
 application.use(session({
     secret: 'iAmASecret',
     saveUninitialized: true,
@@ -40,6 +44,7 @@ application.use(login);
 application.use(logout);
 application.use(gabs);
 application.use(signup);
+
 
 
 

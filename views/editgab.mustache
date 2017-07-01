@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="/styles.css">
     <link rel="shortcut icon" href="./images/gab.ico" type="image/x-icon">
 
-    <title>My Gabs</title>
+    <title>Edit Gab</title>
 </head>
 
 <body>
@@ -22,27 +22,15 @@
         </div>
     </div>
     <div class='gab-card-wrapper'>
-        {{#gabs}}
-
         <div class='gab-card'>
-            <p>{{description}} </p>
-            <div class='likes-section'>
-                <p class="details"> Written by: {{author}}</p>
-                <p class="details"> {{timestamp}}</p>
-            </div>
-
-            <div class='likes-section'>
-                <a class='likes-link wide-80' href="/likes/{{id}}">{{likes.length}} Likes </a>
-                <form action="/mygabs/like/{{id}}" method="POST">
-                    <button class='like-button' type="submit"></button>
-                </form>
-                <form action="/delete/{{id}}" method="POST">
-                    <button class='delete-button' type="submit"></button>
-                </form>
-                <a class='edit-link' href='/editgab/{{id}}'></a>
-            </div>
+            {{#errors}}
+            <p>{{msg}}</p>
+            {{/errors}}
+            <form action="/edit/{{gabId}}" method="POST">
+                <input class='big-input-field' type="text" name="newContent" placeholder="Write Gab Here:" autofocus>
+                <button class='center-button' type="submit">Update Gab</button>
+            </form>
         </div>
-        {{/gabs}}
     </div>
 </body>
 

@@ -2,7 +2,7 @@
 module.exports = function (sequelize, DataTypes) {
   var gabs = sequelize.define('gabs', {
     description: DataTypes.STRING,
-    timestamp: DataTypes.DATE,
+    timestamp: DataTypes.STRING,
     author: DataTypes.STRING
   })
 

@@ -4,7 +4,7 @@ const models = require('../models');
 
 router.get('/dashboard', async (request, response) => {
 
-    if (request.session.isAuthenticated === false) {
+    if (!request.session.isAuthenticated) {
         response.redirect('/login');
     }
     else {
@@ -30,14 +30,18 @@ router.post('/like/:id', async (request, response) => {
 });
 
 router.get('/likes/:id', async (request, response) => {
+    if (!request.session.isAuthenticated) {
+        response.redirect('/login');
+    } else {
 
     var gabId = request.params.id;
     var gab = await models.gabs.find({ where: { id: gabId } });
     var likes = await models.likes.findAll({ where: { gabId: gabId }, include: [models.users] });
 
-    var model = { gab: gab, likes: likes };
+    var model = { gab: gab, likes: likes, name: request.session.name  };
     
     response.render('likes', model);
+    }
 });
 
 module.exports = router;

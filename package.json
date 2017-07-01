@@ -1,5 +1,5 @@
 {
-  "name": "login-project",
+  "name": "gabble",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -14,7 +14,8 @@
     "express": "^4.15.3",
     "express-session": "^1.15.3",
     "express-validator": "^3.2.0",
-    "mustache-express": "^1.2.4",
+    "moment": "^2.18.1",
+    "mustache-express": "^1.2.5",
     "pg": "^6.4.0",
     "sequelize": "^4.2.1"
   },

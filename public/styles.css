@@ -1,0 +1,318 @@
+/***********
+GENERAL
+************/
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: 'Unica One', cursive;
+    background: url('./images/bg.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.error {
+    font-size: 24px;
+    color: white;
+    margin-left: 20px;
+    }
+/**********************
+mobile
+***********************/
+
+/*****************
+index page
+*****************/
+@media (min-width: 320px){
+    .title {
+        color: #3A3A3C;
+        margin-bottom: 50px;
+        font-weight: lighter;
+    }
+    .card {
+        background: rgba(140,150,150,0.7);
+        position: fixed;
+        border-radius: 40px;
+        top: 11%;
+        left: 13%;
+        height: 85%;
+        width: 75%;
+        padding: 50px;
+    }
+    .icon {
+        background: url(./images/gabble.jpeg) center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 30px;
+        height: 300px;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 250px;
+        margin-top: 200px;
+    }
+    .login, .signup, .title {
+        margin-top: 50px;
+        border-radius: 30px;
+        height: 100px;
+        width: 100%;
+        background: #717080;
+        text-align: center;
+        line-height: 2.5em;
+        font-size: 40px;
+
+    }
+    .login a, .signup a {
+        text-decoration: underline;
+        color: #3A3A3C;
+        font-weight: lighter;
+    }
+    /*****************
+    login
+    *****************/
+    #login {
+        height: 8%;
+        border-radius: 40px;
+        background: #3A3A3C;
+        width: 75%;
+        margin: auto;
+    }
+    .form-text {
+        all: unset;
+        line-height: 3.5em;
+        margin-left: 30px;
+        font-size: 25px;
+        color: #8B81A1;
+    }
+/*****************
+signup
+*****************/
+
+    #signup {
+    all:unset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50%;
+    margin-left: 50px;
+    font-size: 30px;
+    color: #3A3A3C;
+    }
+    .field::placeholder {
+        color:#EFEFEF;
+    }
+    .field {
+        all:unset;
+        width: calc(50% - 20px);
+        
+    }
+    .center-button {
+        all: unset;
+        background: white;
+        color: #3A3A3C;
+        font-size: 26px;
+        border-radius: 30px;
+        width: 45%;
+        margin: auto;
+        text-align: center;
+        line-height: 2.5em;
+        cursor: pointer;
+        margin-left: 27%;
+    }
+    .center-button:hover {
+        background: #3A3A3C;
+        color: white;
+    }
+/*****************
+dashboard
+*****************/
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 10%;
+        background: #8C8AA7;
+        padding: 8px;
+        position: fixed;
+        z-index: 1;
+    }
+    .nav-bar-item {
+        display: flex;
+        width: calc(25% - 20px);
+        justify-content: center;
+    }
+    .nav-bar img {
+        height: 60px;
+        width: 75px;
+        border-radius: 30px;
+    }
+    .display-name {
+        padding: 20px;
+    }
+    .nav-bar-a, .nav-bar-item div{
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        padding-top: 10px;
+    }
+    .nav-bar-item button {
+        all:unset;
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        padding-top: 10px;
+        cursor: pointer;
+    }
+    .gab-card-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-top: 125px;
+    }
+    .gab-card {
+        width: 75%;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        background: rgba(140,150,150,0.7);
+        color: white;
+        font-size: 22px;
+        margin-bottom: 40px;
+        border-radius: 30px;
+        padding: 30px;
+    }
+    .details {
+        color: #323D45;
+        font-weight: bolder;
+    }
+    .likes-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .likes-link{
+        cursor: pointer;
+        color: white;
+    }
+    .like-button {
+        all: unset;
+        cursor: pointer;
+        background: url('./images/like.png');
+        height: 30px;
+        width: 39px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        border: 2px solid #525671;
+    }
+/*****************
+likes page
+*****************/
+    .top-room {
+        margin-top: 30px;
+    }
+/*****************
+my gabs
+*****************/
+    .delete-button {
+        all: unset;
+        cursor: pointer;
+        background: url('./images/delete.png');
+        height: 31px;
+        width: 31px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        border: 2px solid #525671;
+    }
+    .edit-link {
+        all: unset;
+        cursor: pointer;
+        background: url('./images/write.png');
+        height: 29px;
+        width: 34px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        border: 2px solid #525671;
+    }
+    .wide-80 {
+        width: 80%;
+    }
+/*****************
+create gab
+*****************/
+    .big-input-field {
+        all: unset;
+        width: 100%;
+        height: 100px;
+        border-radius: 30px;
+        line-height: 3em;
+        margin-bottom: 50px;
+    }
+}
+/*****************
+tablet
+*****************/
+@media (min-width: 700px) {
+    .card {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .login, .signup, .title {
+        height: 50px;
+        line-height: 1.2em;
+        width:75%;
+        margin: auto;
+    }
+    .icon {
+        margin-bottom: 30px;
+        margin-top: 20px;
+        height: 45%;
+        width: 45%;
+    }
+    #login {
+        height: 15%;
+    }
+    /*.form-text {
+        line-height: 2.5em;
+    }*/
+}
+/*****************
+desktop
+*****************/
+
+/*****************
+index
+*****************/
+@media (min-width: 1000px) {
+    .icon {
+    height: 40%;
+    width: 25%;
+    }
+    .title {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    }
+/*****************
+login
+*****************/
+    #button {
+        all:unset;
+        background: white;
+        color: #3A3A3C;
+        font-size: 20px;
+        border-radius: 30px;
+        width: 15%;
+        text-align: center;
+        line-height: 2.5em;
+        cursor:pointer
+    }
+    #button:hover {
+        background: #5C5C6F;
+        color: white;
+    }
+}

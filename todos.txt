@@ -1,0 +1,30 @@
+STYLING::
+----- ideas ------
+    hover affects!!!
+----- mobile -----
+    not working??
+    login page needs work for tablet and mobile
+    figure out whats going on with index on mobile
+
+
+    add hover and animation
+    fix colors and layouts on sign up and login
+    once logged in: 
+        most pages are completely responsive except nav bar, just minor adjustments
+        color palettes good!
+        
+
+
+LOGIC::
+
+
+FANCY::
+ 
+-----logic-----
+
+----add headers that get inserted into each view with mustache(nav bar) -- actually only needed for dashboard and gabs pages
+
+
+----make reused queries and validations external functions that get called on
+
+----rework some of the file structure (user route can all be one, includes dashboard, look up examples)

@@ -12,7 +12,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       timestamp: {
-        type: Sequelize.DATE
+        type: Sequelize.STRING
       },
       author: {
         type: Sequelize.STRING

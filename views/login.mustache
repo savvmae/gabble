@@ -1,12 +1,23 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="/styles.css">
-    </head>
-    <body>
-        <form method="POST" action="/login">
-            <input type="text" name="name" placeholder="Name:" autofocus>
-            <input type='password' name='password' placeholder="Password:">
-            <button type="submit">Login</button>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Bahiana|Unica+One|Walter+Turncoat" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="./images/gab.ico" type="image/x-icon">
+
+    <title>Login</title>
+</head>
+
+<body>
+    <div class='card'>
+        <div class="title">Login</div>
+        <div class='icon'></div>
+        <form id="login" method="POST" action="/login">
+            <input class='form-text'type="text" name="name" placeholder="Name:" autofocus>
+            <input class='form-text'type='password' name='password' placeholder="Password:">
+            <button id='button'type="submit">Login</button>
         </form>
-    </body>
+    </div>
+</body>
+
 </html>
