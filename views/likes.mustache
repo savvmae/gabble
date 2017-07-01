@@ -29,8 +29,8 @@
                 <p class="details"> Written by: {{gab.author}}</p>
                 <p class="details"> {{gab.timestamp}}</p>
             </div>
-            {{#likes}}
             <p>Liked by:</p>
+            {{#likes}}
             <p>{{#.}}{{user.dataValues.name}}{{/.}}</p>
             {{/likes}}
         </div>

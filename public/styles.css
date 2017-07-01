@@ -40,28 +40,29 @@ index page
         left: 13%;
         height: 85%;
         width: 75%;
-        padding: 50px;
+        padding: 20px;
     }
     .icon {
         background: url(./images/gabble.jpeg) center center;
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 30px;
-        height: 300px;
+        height: 150px;
         width: 50%;
         margin: auto;
-        margin-bottom: 250px;
-        margin-top: 200px;
+        margin-top: 75px;
+        margin-bottom: 80px;
     }
     .login, .signup, .title {
-        margin-top: 50px;
+        margin-top: 10px;
+        margin-bottom: 40px;
         border-radius: 30px;
-        height: 100px;
+        height: 70px;
         width: 100%;
         background: #717080;
         text-align: center;
         line-height: 2.5em;
-        font-size: 40px;
+        font-size: 24px;
 
     }
     .login a, .signup a {
@@ -69,22 +70,38 @@ index page
         color: #3A3A3C;
         font-weight: lighter;
     }
+    #button {
+        all:unset;
+        background: white;
+        color: #3A3A3C;
+        font-size: 20px;
+        border-radius: 30px;
+        width: 100%;
+        text-align: center;
+        line-height: 2.5em;
+        cursor:pointer
+    }
+     #button:hover {
+        background: #5C5C6F;
+        color: white;
+    }
     /*****************
     login
     *****************/
     #login {
-        height: 8%;
+        height: 35%;
         border-radius: 40px;
-        background: #3A3A3C;
-        width: 75%;
+        background: #717080;
         margin: auto;
+        padding: 10px;
     }
     .form-text {
         all: unset;
         line-height: 3.5em;
         margin-left: 30px;
-        font-size: 25px;
+        font-size: 18px;
         color: #8B81A1;
+        width: 100%;
     }
 /*****************
 signup
@@ -132,7 +149,7 @@ dashboard
         display: flex;
         flex-direction: row;
         width: 100%;
-        height: 10%;
+        height: 5%;
         background: #8C8AA7;
         padding: 8px;
         position: fixed;
@@ -257,20 +274,24 @@ create gab
 tablet
 *****************/
 @media (min-width: 700px) {
+    .nav-bar {
+        height: 13%;
+    }
     .card {
         padding: 10px;
         display: flex;
         flex-direction: column;
     }
     .login, .signup, .title {
-        height: 50px;
-        line-height: 1.2em;
+        height: 65px;
+        line-height: 1.5em;
         width:75%;
         margin: auto;
+        font-size: 40px;
     }
     .icon {
         margin-bottom: 30px;
-        margin-top: 20px;
+        margin-top: 0px;
         height: 45%;
         width: 45%;
     }
@@ -300,19 +321,5 @@ index
 /*****************
 login
 *****************/
-    #button {
-        all:unset;
-        background: white;
-        color: #3A3A3C;
-        font-size: 20px;
-        border-radius: 30px;
-        width: 15%;
-        text-align: center;
-        line-height: 2.5em;
-        cursor:pointer
-    }
-    #button:hover {
-        background: #5C5C6F;
-        color: white;
-    }
+    
 }
