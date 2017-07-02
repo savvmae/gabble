@@ -42,8 +42,11 @@ index page
         width: 75%;
         padding: 20px;
     }
+    .signup-card {
+        height: auto;
+    }
     .icon {
-        background: url(./images/gabble.jpeg) center center;
+        background: url(../images/gabble.jpeg) center center;
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 30px;
@@ -61,7 +64,7 @@ index page
         width: 100%;
         background: #717080;
         text-align: center;
-        line-height: 2.5em;
+        line-height: 3em;
         font-size: 24px;
 
     }
@@ -82,7 +85,7 @@ index page
         cursor:pointer
     }
      #button:hover {
-        background: #5C5C6F;
+        background: #3A3A3C;
         color: white;
     }
     /*****************
@@ -100,8 +103,11 @@ index page
         line-height: 3.5em;
         margin-left: 30px;
         font-size: 18px;
-        color: #8B81A1;
+        color: white;;
         width: 100%;
+    }
+    .form-text::-webkit-input-placeholder{
+        color:#3A3A3C;
     }
 /*****************
 signup
@@ -110,7 +116,7 @@ signup
     #signup {
     all:unset;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     height: 50%;
     margin-left: 50px;
@@ -122,21 +128,21 @@ signup
     }
     .field {
         all:unset;
-        width: calc(50% - 20px);
-        
+        width: calc(100% - 20px); 
+        margin: 10px 0px;
+        font-size: 24px;
     }
     .center-button {
         all: unset;
         background: white;
         color: #3A3A3C;
-        font-size: 26px;
+        font-size: 20px;
         border-radius: 30px;
-        width: 45%;
-        margin: auto;
+        width: 95%;
         text-align: center;
-        line-height: 2.5em;
         cursor: pointer;
-        margin-left: 27%;
+        padding: 15px;
+        margin-top: 30px;
     }
     .center-button:hover {
         background: #3A3A3C;
@@ -273,6 +279,7 @@ create gab
 /*****************
 tablet
 *****************/
+
 @media (min-width: 700px) {
     .nav-bar {
         height: 13%;
@@ -285,22 +292,42 @@ tablet
     .login, .signup, .title {
         height: 65px;
         line-height: 1.5em;
-        width:75%;
+        width: 90%;
         margin: auto;
         font-size: 40px;
     }
     .icon {
-        margin-bottom: 30px;
-        margin-top: 0px;
+        margin-bottom: 15px;
+        margin-top: 15px;
         height: 45%;
         width: 45%;
     }
     #login {
-        height: 15%;
+        height: 33%;
+        width: 90%;
     }
-    /*.form-text {
+    .form-text {
         line-height: 2.5em;
-    }*/
+        font-size: 24px;
+    }
+    #button {
+        font-size: 24px;
+    }
+/*****************
+Sign up
+*****************/
+    #signup {
+        flex-direction: row;
+        margin: 50px 30px;
+    }
+    .field {
+        width: calc(50% - 20px);
+        font-size: 28px;
+        margin: 30px 0px;
+    }
+    .center-button {
+        font-size: 28px;
+    }
 }
 /*****************
 desktop
@@ -312,14 +339,23 @@ index
 @media (min-width: 1000px) {
     .icon {
     height: 40%;
-    width: 25%;
+    width: 30%;
     }
-    .title {
-    margin-bottom: 50px;
-    margin-top: 50px;
-    }
+   
 /*****************
 login
 *****************/
-    
+    .form-text, #button{
+        font-size: 30px;
+        height: 34%;
+    }
+    #login {
+        height: 35%;
+    }
+/*****************
+sign up
+*****************/ 
+    .field, .center-button {
+        font-size: 36px;
+    }
 }
