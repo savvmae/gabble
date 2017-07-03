@@ -10,14 +10,14 @@
 
 <body>
     <div class='nav-bar'>
-        <div class="nav-bar-item"><a href='/dashboard'><img src='./images/gabble.jpeg'></a>
+        <div class="nav-bar-item"><a class="swing" href='/dashboard'><img src='./images/gabble.jpeg'></a>
             <div class='display-name'>{{name}}</div>
         </div>
-        <div class="nav-bar-item"><a class='nav-bar-a' href="/mygabs">My Gabs </a></div>
-        <div class="nav-bar-item"> <a class='nav-bar-a' href='/creategab'> Write New Gab </a></div>
+        <div class="nav-bar-item"><a class='nav-bar-a swing' href="/mygabs">My Gabs </a></div>
+        <div class="nav-bar-item"> <a class='nav-bar-a swing' href='/creategab'> Write New Gab </a></div>
         <div class="nav-bar-item">
             <form action="/logout" method="POST">
-                <button type="submit">Logout</button>
+                <button class="swing" type="submit">Logout</button>
             </form>
         </div>
     </div>
@@ -32,14 +32,14 @@
             </div>
 
             <div class='likes-section my-gab'>
-                <a class='likes-link wide-80' href="/likes/{{id}}">{{likes.length}} Likes </a>
+                <a class='likes-link wide-80 swing' href="/likes/{{id}}">{{likes.length}} Likes </a>
                 <form action="/mygabs/like/{{id}}" method="POST">
-                    <button class='like-button' type="submit"></button>
+                    <button class='like-button swing' type="submit"></button>
                 </form>
                 <form action="/delete/{{id}}" method="POST">
-                    <button class='delete-button' type="submit"></button>
+                    <button class='delete-button swing' type="submit"></button>
                 </form>
-                <a class='edit-link' href='/editgab/{{id}}'></a>
+                <a class='edit-link swing' href='/editgab/{{id}}'></a>
             </div>
         </div>
         {{/gabs}}

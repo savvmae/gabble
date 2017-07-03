@@ -10,14 +10,14 @@
 
 <body>
     <div class='nav-bar'>
-        <div class="nav-bar-item"><a href='/dashboard'><img src='./images/gabble.jpeg'></a>
+        <div class="nav-bar-item"><a class="swing" href='/dashboard'><img src='./images/gabble.jpeg'></a>
             <div class='display-name'>{{name}}</div>
         </div>
-        <div class="nav-bar-item"><a class='nav-bar-a' href="/mygabs">My Gabs </a></div>
-        <div class="nav-bar-item"> <a class='nav-bar-a' href='/creategab'> Write New Gab </a></div>
+        <div class="nav-bar-item"><a class='nav-bar-a swing' href="/mygabs">My Gabs </a></div>
+        <div class="nav-bar-item"> <a class='nav-bar-a swing' href='/creategab'> Write New Gab </a></div>
         <div class="nav-bar-item">
             <form action="/logout" method="POST">
-                <button type="submit">Logout</button>
+                <button class="swing" type="submit">Logout</button>
             </form>
         </div>
     </div>
@@ -31,9 +31,9 @@
                 <p class="details"> {{timestamp}}</p>
             </div>
             <div class='likes-section'>
-                <a class='likes-link' href="/likes/{{id}}">{{likes.length}} Likes </a>
+                <a class='likes-link swing' href="/likes/{{id}}">{{likes.length}} Likes </a>
                 <form action="/like/{{id}}" method="POST">
-                    <button class='like-button'type="submit"></button>
+                    <button class='like-button swing'type="submit"></button>
                 </form>
             </div>
         </div>
