@@ -1,19 +1,12 @@
 STYLING::
 ----- ideas ------
-    hover affects!!!
------ mobile -----
-    not working??
-    login page needs work for tablet and mobile
-    figure out whats going on with index on mobile
 
+
+    *** sign up button 
+    
+    make the rest responsive -- mostly nav bar
 
     add hover and animation
-    fix colors and layouts on sign up and login
-    once logged in: 
-        most pages are completely responsive except nav bar, just minor adjustments
-        color palettes good!
-        
-
 
 LOGIC::
 
