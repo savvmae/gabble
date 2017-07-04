@@ -32,7 +32,9 @@
             </div>
 
             <div class='likes-section my-gab'>
-                <a class='likes-link wide-80 swing' href="/likes/{{id}}">{{likes.length}} Likes </a>
+                <div class="wide-80">
+                    <div>
+                <a class='likes-link swing' href="/likes/{{id}}">{{likes.length}} Likes </a></div></div>
                 <form action="/mygabs/like/{{id}}" method="POST">
                     <button class='like-button swing' type="submit"></button>
                 </form>

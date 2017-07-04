@@ -10,7 +10,7 @@
 
 <body>
     <div class='nav-bar'>
-        <div class="nav-bar-item"><a class="swing" href='/dashboard'><img src='./images/gabble.jpeg'></a>
+        <div class="nav-bar-item"><a class="swing" href='/dashboard'><img src='../images/gabble.jpeg'></a>
             <div class='display-name'>{{name}}</div>
         </div>
         <div class="nav-bar-item"><a class='nav-bar-a swing' href="/mygabs">My Gabs </a></div>
@@ -28,7 +28,7 @@
             {{/errors}}
             <form action="/edit/{{gabId}}" method="POST">
                 <input class='big-input-field' type="text" name="newContent" placeholder="Write Gab Here:" autofocus>
-                <button class='center-button' type="submit">Update Gab</button>
+                <button class='center-button swing' type="submit">Update Gab</button>
             </form>
         </div>
     </div>

@@ -3,10 +3,7 @@ STYLING::
 
 
     *** sign up button 
-    
-    make the rest responsive -- mostly nav bar
 
-    add hover and animation
 
 LOGIC::
 
