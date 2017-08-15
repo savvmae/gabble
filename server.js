@@ -31,12 +31,6 @@ application.use(session({
     resave: false
 }));
 application.use(express.static(__dirname + '/public'));
-// application.use(function (request, response, next) {
-//     if (request.session.isAuthenticated === undefined) {
-//         request.session.isAuthenticated = false;
-//     }
-//     next();
-// });
 
 application.use(dashboard);
 application.use(index);
@@ -45,18 +39,9 @@ application.use(logout);
 application.use(gabs);
 application.use(signup);
 
+application.set('port', process.env.PORT || 3000);
 
-
-
-
-
-
-
-
-
-
-
-
-application.listen(3000);
-
+application.listen(application.get('port'), () => {
+  console.log(`Listening on port ${application.get('port')}`)
+});
 
